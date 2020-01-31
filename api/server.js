@@ -1,23 +1,21 @@
 const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
-const Users = require('../auth/auth-model')
+
+const authRouter = require('../auth/auth-router')
 
 const server = express();
+server.use(helmet());
+server.use(express.json());
+server.use(cors());
+
+server.use('/api/auth', authRouter)
+
+
+
 
 server.get('/', (req, res) => {
     res.send("It's Alive!")
 })
-
-server.get('/users', (req, res) => {
-    Users.findUsers()
-    .then(users => {
-        res.status(200).json(users)
-    })    
-    .catch(err => {
-        res.status(500).json({message: 'users not found'})
-    })
-});
-
 
 module.exports = server;
