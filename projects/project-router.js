@@ -13,4 +13,15 @@ router.get('/projects', (req, res) => {
             });
 });
 
+router.post('/', restricted, (req, res) => {
+    const projectData = req.body;
+    Projects.addProjects(projectData)
+    .then((project) => {
+        res.status(200).json(project)
+    }).catch((err) => {
+        res.status(500).json({message:'Project wasnt sent'})
+    });
+});
+
+
 module.exports = router;

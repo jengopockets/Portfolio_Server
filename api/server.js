@@ -11,7 +11,7 @@ server.use(express.json());
 server.use(cors());
 
 server.use('/api/auth', authRouter);
-server.use('/api', projectRouter);
+server.use('/api/project', projectRouter);
 
 
 
