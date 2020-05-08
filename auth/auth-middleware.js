@@ -9,6 +9,7 @@ module.exports = (req, res, next) => {
             if (err) {
                 res.status(401).json({ you: 'shall not pass!'});
                 }else{
+                    console.log('giveme', decodedToken);
                     req.user = decodedToken;
                     (next())
                 }

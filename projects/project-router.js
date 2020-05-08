@@ -23,5 +23,10 @@ router.post('/', restricted, (req, res) => {
     });
 });
 
+router.put('/:id', restricted, (req, res) => {
+    const id = req.params.id
+});
+
+
 
 module.exports = router;
