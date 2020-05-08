@@ -17,6 +17,7 @@
     "helmet": "^3.21.2",
     "jsonwebtoken": "^8.5.1",
     "knex": "^0.20.3",
+    "nodemailer": "^6.4.6",
     "nodemon": "^2.0.1",
     "pg": "^7.17.1",
     "sqlite3": "^4.1.0"
