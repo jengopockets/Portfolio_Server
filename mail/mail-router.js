@@ -7,7 +7,7 @@ router.post('/', (req, res) => {
         service: 'gmail',
         auth: {
             user:'jengoportmail@gmail.com',
-            pass: 'litepass'
+            pass: process.env.EPASS
         }
     });
     
