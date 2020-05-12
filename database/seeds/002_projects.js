@@ -9,7 +9,7 @@ exports.seed = function(knex) {
           id: 1,
           project_name: 'Crime Stats For Travelers',
           project_img: 'https://raw.githubusercontent.com/jengopockets/Portfolio/master/src/image/Crime.png',
-          project_description:'Crime Stat for Travelers is a web application created to visualize crime statistics in the US. We used Mapbox Gl to create the US map, and a custom filter to show crime rates in each state. I was soley responsible for creating the logic that rendered individualized crime statistics in our filter system. This project was built using ReactJS and MapBoxGL.',
+          project_description:'Crime Stat for Travelers is a ReactJS web application created to visualize crime statistics in the US. We used Mapbox Gl to create the US map, and a custom filter to show crime rates in each state. I developed the logic that rendered state crime statistics in our filter system.',
           git: 'https://github.com/Lambda-School-Labs/crime-statistics-for-travelers-fe',
           site: 'https://crimestatsfortravelers.com/'
           },
@@ -17,7 +17,7 @@ exports.seed = function(knex) {
           id: 2,
           project_name: 'Random Act Generator',
           project_img: 'https://raw.githubusercontent.com/jengopockets/Portfolio/master/src/image/Random.png',
-          project_description:'The Random Act Generator is a web application created to help people get ideas to do random good deeds for others. On this project I worked as a backend engineer using NodeJS with Express. I created all the endpoints in the API including endpoints that served random individualized data to the frontend.',
+          project_description:'The Random Act Generator is a web application created to help people get ideas to do random good deeds for others. On this project I developed the backend using NodeJS with Express.',
           git: 'https://github.com/buildweek-random-acts-generator/back-end',
           site: 'https://lucid-panini-415838.netlify.com/'
           },
