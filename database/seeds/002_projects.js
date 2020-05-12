@@ -9,7 +9,7 @@ exports.seed = function(knex) {
           id: 1,
           project_name: 'Crime Stats For Travelers',
           project_img: 'https://raw.githubusercontent.com/jengopockets/Portfolio/master/src/image/Crime.png',
-          project_description:'Crime Stat for Travelers is a ReactJS web application created to visualize crime statistics in the US. We used Mapbox Gl to create the US map, and a custom filter to show crime rates in each state. I developed the logic that rendered state crime statistics in our filter system.',
+          project_description:'Crime Stat for Travelers is a ReactJS web application created to visualize crime statistics in the US. We used Mapbox Gl to create the US map, and a custom filter to show crime rates in each state and used custom logic for state crime stat filters.',
           git: 'https://github.com/Lambda-School-Labs/crime-statistics-for-travelers-fe',
           site: 'https://crimestatsfortravelers.com/'
           },
