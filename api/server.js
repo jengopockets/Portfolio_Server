@@ -7,9 +7,9 @@ const projectRouter = require('../projects/project-router');
 const mailRouter = require('../mail/mail-router')
 
 const server = express();
+server.use(cors());
 server.use(helmet());
 server.use(express.json());
-server.use(cors());
 
 server.use('/api/auth', authRouter);
 server.use('/api/project', projectRouter);
