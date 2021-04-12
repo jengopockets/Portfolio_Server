@@ -6,8 +6,13 @@ const authRouter = require('../auth/auth-router');
 const projectRouter = require('../projects/project-router');
 const mailRouter = require('../mail/mail-router')
 
+const corsOptions = {
+    origin: 'https://www.jacobtharp.com',
+    optionsSuccessStatus: 200
+}
+
 const server = express();
-server.use(cors());
+server.use(cors(corsOptions));
 server.use(helmet());
 server.use(express.json());
 
