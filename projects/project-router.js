@@ -5,6 +5,7 @@ const router = express.Router();
 const restricted = require('../auth/auth-middleware');
 
 router.get('/projects', (req, res) => {
+    console.log("hit");
     Projects.getProjects()
             .then((project) => {
                 res.status(201).json(project)
