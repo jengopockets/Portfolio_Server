@@ -7,16 +7,16 @@ const projectRouter = require('../projects/project-router');
 const mailRouter = require('../mail/mail-router')
 
 const corsOptions = {
-    origin: 'https://www.jacobtharp.com',
+    origin: true,
     optionsSuccessStatus: 200
 }
 
 const server = express();
-server.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-  });
+// server.use(function(req, res, next) {
+//     res.header("Access-Control-Allow-Origin", "*");
+//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//     next();
+//   });
 server.use(cors(corsOptions));
 server.use(helmet());
 server.use(express.json());
