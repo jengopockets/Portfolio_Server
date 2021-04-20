@@ -8,6 +8,7 @@ module.exports ={
 }
 
 function getProjects() {
+    console.log('hit');
     return db('projects')
 }
 
