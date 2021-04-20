@@ -22,7 +22,7 @@ server.use(helmet());
 server.use(express.json());
 
 server.use('/api/auth', authRouter);
-server.use('/api/project',console.log("hit"), projectRouter);
+server.use('/api/project', projectRouter);
 
 server.use('/mail', mailRouter);
 
